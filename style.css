@@ -602,3 +602,20 @@ body {
     border-top: 1px dashed #dbd3c9;
 }
 
+/* ========== MOBILE STYLES ========== */
+@media (max-width: 800px) {
+    .white-card {
+        padding: 25px;
+    }
+    .menu {
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+    .cards, .gallery {
+        grid-template-columns: 1fr;
+    }
+    .map-screenshot {
+        height: 250px;
+    }
+    .map-footer, .footer-content {
+        flex-direction: column;
