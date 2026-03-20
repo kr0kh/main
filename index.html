@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аренда дома в лесу</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Главный контейнер -->
+    <div class="big-frame">
+        <div class="white-card">
+
+            <!-- ==================== HEADER ==================== -->
+            <div class="header">
+                <!-- Логотип -->
+                <div class="logo">
+                    <div class="logo-icon">🌲</div>
+                    <div class="logo-text">Forest<span>Home</span></div>
+                </div>
+
+                <!-- NAV MENU -->
+                <div class="menu">
+                    <a href="#about" class="menu-link">О доме</a>
+                    <a href="#gallery" class="menu-link">Галерея</a>
+                    <a href="#map-section" class="menu-link">На карте</a>
+                    <a href="#request" class="menu-link">Заявка</a>
+                </div>
+
+                <!-- NUNBER -->
+                <div class="phone">+7 (999) 123-45-67</div>
+            </div>
+
+            <!-- ==================== MAIN DISPLAY ==================== -->
+            <div class="hero">
+                <div class="hero-text">
+                    <h1>Аренда дома <span>в тишине</span></h1>
+                    <p class="hero-description">Современный дом среди сосен. Полная приватность, камин и терраса.</p>
+                    <div class="hero-buttons">
+                        <button class="btn-green" id="bookBtn">Забронировать</button>
+                        <button class="btn-white" id="photoBtn">Фото</button>
+                    </div>
+                </div>
+                <div class="hero-image"></div>
+            </div>
+
+            <!-- ==================== ABOUT ==================== -->
+            <div id="about" class="section">
+                <div class="section-title">
+                    О доме
+                    <span class="badge">детали</span>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <h3>Пространство</h3>
+                        <p>135 м², два этажа, панорамные окна, большая терраса с шезлонгами.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Интерьер</h3>
+                        <p>Мебель из массива дуба, натуральный камень, минимализм. Техника премиум-класса.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Впечатления</h3>
+                        <p>Камин, сауна, мангал. Рядом озеро и лесные тропы. Полное уединение.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==================== GALLERY ==================== -->
+            <div id="gallery" class="section">
+                <div class="section-title">
+                    Галерея
+                    <span class="badge">интерьер и виды</span>
+                </div>
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <span class="gallery-caption">Гостиная с камином</span>
+                    </div>
+                    <div class="gallery-item">
+                        <span class="gallery-caption">Кухня-столовая</span>
+                    </div>
+                    <div class="gallery-item">
+                        <span class="gallery-caption">Спальня и утро</span>
+                    </div>
+                </div>
+                <div class="gallery-footer">
+                    <span class="badge-gray">+ 18 фотографий в высоком качестве</span>
+                </div>
+            </div>
+
+            <!-- ==================== MAP ==================== -->
+            <div id="map-section" class="section">
+                <div class="section-title">
+                    Как добраться
+                    <span class="badge">метка на карте</span>
+                </div>
+                
+                <!-- Контейнер для скриншота карты -->
+                <div class="map-container">
+                    <div class="map-screenshot">
+                        <div class="map-badge">
+                            <span>📍</span> Наш дом (кликни на ссылку ниже)
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- MAP FOOTER -->
+                <div class="map-footer">
+                    <div class="coords">
+                        <span>📍</span> Координаты: 64.11647, 32.40171 (Карелия)
+                    </div>
+                    <a href="https://www.google.com/maps?q=64.11647280758336,32.401711866252725" 
+                       target="_blank" 
+                       class="map-link">
+                        🔗 Открыть в Google Maps
+                    </a>
+                </div>
+                
+                <div class="map-hint">
+                    <p>🚗 На машине: 2 часа от Петрозаводска<br>
+                    🚂 На поезде: станция "Карельская", далее такси 30 мин</p>
+                </div>
+            </div>
+
+            <!-- ==================== FORM ==================== -->
+            <div id="request" class="section form-section">
+                <h2 class="form-title">Оставить заявку</h2>
+                <p class="form-sub">Заполните форму — мы перезвоним в течение часа</p>
+
+                <div class="form-row">
+                    <div class="input-group">
+                        <label>Имя</label>
+                        <input class="input-field" type="text" placeholder="Анна" value="Михаил">
+                    </div>
+                    <div class="input-group">
+                        <label>Телефон</label>
+                        <input class="input-field" type="tel" placeholder="+7 900 000-00-00">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="input-group">
+                        <label>Email</label>
+                        <input class="input-field" type="email" placeholder="example@mail.ru">
+                    </div>
+                    <div class="input-group">
+                        <label>Дата (ориентир)</label>
+                        <input class="input-field" type="text" placeholder="июнь 2026">
+                    </div>
+                </div>
+
+                <div class="form-footer">
+                    <button class="btn-form">Отправить заявку</button>
+                    <p class="privacy-note">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+                </div>
+            </div>
+
+            <!-- ==================== FOOTER ==================== -->
+            <div class="footer">
+                <div class="footer-divider"></div>
+                
+                <!-- FOOTER CONTENT -->
+                <div class="footer-content">
+                    <div class="footer-phone">
+                        <span class="footer-phone-icon"></span>
+                        +7 (999) 123-45-67
+                    </div>
+                    <div class="footer-auth">
+                        <a href="#" id="authLink" class="auth-link">Авторизация</a>
+                    </div>
+                </div>
+            </div>
+
+        </div> 
+    </div> 
+
+    <!-- ==================== LOG IN ==================== -->
+    <div id="authModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Вход в личный кабинет</h3>
+                <span class="close-modal">&times;</span>
+            </div>
+            
+            <!-- LOG IN FORM -->
+            <div class="modal-body">
+                <div class="auth-form">
+                    <div class="auth-input-group">
+                        <label for="username">Логин</label>
+                        <input type="text" id="username" class="auth-input" placeholder="Введите логин">
+                    </div>
+                    
+                    <div class="auth-input-group">
+                        <label for="password">Пароль</label>
+                        <input type="password" id="password" class="auth-input" placeholder="Введите пароль">
+                    </div>
+                    
+                    <button class="auth-btn" id="loginBtn">Войти</button>
+                </div>
+                
+                <p class="auth-hint">Демо: логин "admin", пароль "12345"</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>
